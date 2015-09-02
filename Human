@@ -1,0 +1,10 @@
+/**
+ *
+ * @author Tasnim Orin
+ */
+ 
+ /*An interface in Java is similar to a class, but the body of an interface can include only abstract methods
+ and final fields (constants). A class implements an interface by providing code for each method declared by the interface. *\
+public interface Human {
+    public void eat();
+}
