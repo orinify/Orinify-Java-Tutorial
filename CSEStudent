@@ -2,29 +2,70 @@
  *
  * @author Tasnim Orin
  */
+ // Note: JAVA IS CASE-SENSITIVE. SO KEYBOARD SHOULD BE TYPED AS IT IS
+ // ALL STATEMENTS IN JAVA END WITH A SEMICOLON
+ 
+ 
+ 
+ /* The keywords used in this tutorials are:
+ 1.public: public is java keyword. It is access specifer that is it allows the programmer to control the visibility of class
+ members.When a class member is declared public, then that member can be accessed by code outside the class in which 
+ it is declared.
+ 2. private: It is opposite of public it prevents a member from being used by code defined outside of its class *\
+ 3. static: This keyword allows main() to be called without having to instantiate a particular instance of the class.
+ 4.  void: this keyword simply tells the compiler that it does not return a value
+ 5. instanceof is used to check if an object is an instance of a class, an instance of a subclass, or an instance
+        of a class that implements a particular interface
+ */
+ 
+ 
+ 
 public class CSEStudent extends UniversityStudent {
+
+/* String args [] declares a parameter named args, which is an array of instances of the class String
+   Object of type String store character strings
+   In this case, args receives any command-line arguments present when the program is executed */
+   
     public static void main(String args[]) {
+    
+    
     /* Creation of object of UniversityStudent Class ("object" refers to a particular 
     instance of a class where the object can be a combination of
     variables, functions, and data structures.)*/
+    
         UniversityStudent u = new UniversityStudent();
+        
+        
+        /*General form of a variable declaration : 
+        type var-name;
+        */
+        
         CSEStudent c = new CSEStudent();
         u.eat();
         u.study();
         c.study();
-        /* instanceof is used to check if an object is an instance of a class, an instance of a subclass, or an instance
-        of a class that implements a particular interface*\
         System.out.println(c instanceof UniversityStudent);
+        
         // it will print true if c is instance of UniversityStudent otherwise false
     }
+    
     /*This is a java method without any parameter and return value is void which means it will not return anything
     The structure of Java method is:
     public/private/protected void/String/int/.../(any kind of variable) method name (parameter,...,nth parameter){
     return the mentioned variable; (If it is not returned it will give Runtime Exception)
     }
     */
-    public  void study() {
+    
+    
+    public void study() {
         System.out.println("CSE student codes");
     }  
     
 }
+ /*Output: run:
+Student eat
+Student studies
+CSE student codes
+true
+BUILD SUCCESSFUL (total time: 1 second)
+ *\
