@@ -1,0 +1,15 @@
+/**
+ *
+ * @author Tasnim Orin
+ */
+public  class UniversityStudent implements Student {
+
+    @Override
+    public void eat() {
+        System.out.println("Student eats");
+    }
+    @Override
+    public  void study() {
+        System.out.println("Student studies");
+    }   
+}
