@@ -1,0 +1,10 @@
+/**
+ *
+ * @author Tasnim Orin
+ */
+ // Here Student class is the subclass of the parent class Human.
+ //In Java a class can inherit from only one parent class but a parent class can have multiple children
+ // A new subclass will inherit all of the attributes of all the anchestors
+public interface Student extends Human {
+    public void study();
+}
