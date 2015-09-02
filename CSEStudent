@@ -1,0 +1,30 @@
+/**
+ *
+ * @author Tasnim Orin
+ */
+public class CSEStudent extends UniversityStudent {
+    public static void main(String args[]) {
+    /* Creation of object of UniversityStudent Class ("object" refers to a particular 
+    instance of a class where the object can be a combination of
+    variables, functions, and data structures.)*/
+        UniversityStudent u = new UniversityStudent();
+        CSEStudent c = new CSEStudent();
+        u.eat();
+        u.study();
+        c.study();
+        /* instanceof is used to check if an object is an instance of a class, an instance of a subclass, or an instance
+        of a class that implements a particular interface*\
+        System.out.println(c instanceof UniversityStudent);
+        // it will print true if c is instance of UniversityStudent otherwise false
+    }
+    /*This is a java method without any parameter and return value is void which means it will not return anything
+    The structure of Java method is:
+    public/private/protected void/String/int/.../(any kind of variable) method name (parameter,...,nth parameter){
+    return the mentioned variable; (If it is not returned it will give Runtime Exception)
+    }
+    */
+    public  void study() {
+        System.out.println("CSE student codes");
+    }  
+    
+}
